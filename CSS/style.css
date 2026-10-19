@@ -1,0 +1,577 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    background:#bdd0ce;
+}
+
+a{
+    text-decoration:none;
+}
+
+.top-bar{
+    background:#000;
+    color:#059aa6;
+    padding:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+}
+
+.site-title{
+    font-size:2rem;
+    font-weight:bold;
+    color:#059aa6;
+}
+
+.email,
+.email a{
+    font-size:1.5rem;
+    color:#059aa6;
+}
+
+.main-header{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    max-width:300px;
+}
+
+/* SITE ACCENT COLOR */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    color:#222;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+nav a.active{
+    color:#059aa6;
+    border-bottom:3px solid #059aa6;
+    padding-bottom:10px;
+}
+
+
+/* HOME PAGE TEXT SIZES */
+.intro-column h2 {
+    font-size: 26px;
+}
+
+.intro-column li {
+    font-size: 17px;
+    line-height: 1.4;
+    }
+
+
+
+
+footer{
+    font-size: 14px;
+    margin:40px auto;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+footer a{
+    background:#000;
+    color:#059aa6;
+    padding:15px 40px;
+    font-weight:bold;
+}
+
+.copyright-bar{
+    width:100%;
+    background:linear-gradient(to right, #245655, #059aa6);
+    color:white;
+    text-align:center;
+    padding:18px 20px;
+    margin-top:30px;
+    font-size:0.9rem;
+    font-weight:bold;
+}
+
+.copyright-bar p{
+    margin:0;
+}
+
+/* HOME PAGE */
+
+.home-content{
+    max-width:1200px;
+    margin:15px auto 40px;
+    padding:35px 35px 25px;
+    background:#e6efef;
+}
+
+/* HERO SECTION */
+
+.hero{
+    margin:0 auto;
+    padding:10px;
+
+    display:grid;
+    grid-template-columns:minmax(0, 560px) minmax(300px, 380px);
+    gap:55px;
+    align-items:center;
+    justify-content:center;
+}
+
+.video-column{
+    width:100%;
+    max-width:560px;
+}
+
+.video-container iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+}
+.video-caption{
+    margin-top:10px;
+    text-align:center;
+    font-size:16px;
+    color:#333;
+}
+
+.intro-column{
+    width:100%;
+}
+
+.intro-text{
+    color:#333;
+     margin-top:80px;
+    margin-bottom:20px;
+    font-size:1rem;
+}
+
+.intro-column h2{
+    margin-bottom:20px;
+}
+
+.intro-column ul{
+    padding-left:20px;
+}
+
+/* FEATURED SECTION */
+.featured{
+    margin:35px 0 0;
+    padding:35px 10px 10px;
+    border-top:2px solid #bdd0ce;
+
+    display:flex;
+    gap:40px;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.featured h2,
+.featured h2 a,
+.featured a{
+    color:#059aa6;
+}
+
+.card {
+    flex:1;
+    text-align:center;
+    font-size: 16px;
+}
+
+.card h2,
+.card h2 a{
+    color:#059aa6;
+    font-size: 25px;
+}
+
+.card a{
+    color:#059aa6;
+    font-weight:bold;
+    
+}
+.card h2{ 
+    margin-bottom:15px;
+}
+
+.card img{
+    width:100%;
+    max-width:300px;
+    display:block;
+    margin:auto;
+}
+
+.card a{
+    color:#059aa6;
+    font-weight:bold;
+}
+.card h2 a{
+    color:#059aa6;
+    font-weight:bold;
+}
+
+/* ABOUT PAGE */
+
+.about-intro{
+    max-width:1200px;
+    margin:40px auto;
+    padding:40px;
+    background:#e2e6e5;
+}
+
+.about-intro p{
+    font-size:1.3rem;
+    line-height:1.8;
+    color:#355f5b;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.bio-section{
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+}
+
+.bio-text{
+    flex:1;
+}
+
+.bio-text h1{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.bio-text p{
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.bio-video{
+    flex:1;
+    margin-top:75px;
+}
+
+.bio-video iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+}
+
+.career-summary{
+    max-width:1200px;
+    margin:50px auto;
+    padding:40px;
+    background:#cfdcdb;
+}
+
+.career-summary h2{
+    font-size:28px;   
+    margin-bottom:20px;
+    color:#222;
+}
+
+
+.career-summary p{
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.resume-button{
+    display:inline-block;
+    background:#000;
+    color:#059aa6;
+    padding:15px 30px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.resume-button:hover{
+    opacity:.85;
+}
+/* RESUME LINK */
+
+.resume-link{
+    display:inline-block;
+    color:#059aa6;
+    font-size:18px;
+    font-weight:bold;
+    text-decoration:none;
+    margin-top:5px;
+}
+
+.resume-link:hover{
+    color:#245655;
+    text-decoration:underline;
+}
+
+
+
+/* MOTION GFX PAGE */
+
+.motion-intro{
+    max-width:1200px;
+    margin:40px auto;
+    padding:40px;
+    background:#e2e6e5;
+    text-align:center;
+}
+
+.motion-intro h1{
+    color:#059aa6;
+    margin-bottom:20px;
+    font-size:3rem;
+}
+
+.motion-intro p{
+    max-width:800px;
+    margin:0 auto 20px;
+    line-height:1.0;
+}
+
+
+.motion-alt{
+    background:#cfdcdb;
+}
+
+.project-section,
+.feature-project,
+.project-gallery{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.project-section h2,
+.feature-project h2,
+.project-gallery h2{
+    color:#059aa6;
+    margin-bottom:30px;
+    border-bottom:3px solid #059aa6;
+    padding-bottom:10px;
+}
+
+.project-text h3,
+.feature-text h3{
+    color:#059aa6;
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+
+.project{
+    display:flex;
+    gap:40px;
+    margin-bottom:35px;
+}
+
+.project-video,
+.project-text{
+    flex:1;
+}
+
+.project-video iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+}
+
+.feature-grid{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.feature-video,
+.feature-text{
+    flex:1;
+}
+
+.feature-video iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+}
+
+.independent-grid{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.independent-image,
+.independent-text{
+    flex:1;
+}
+
+.independent-image img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:100%;
+    display:block;
+
+}
+
+.statement-title{
+    font-weight:bold;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.artist-statement{
+    font-style:italic;
+    color:#555;
+    line-height:1.2;
+    margin-bottom:10px;
+}
+
+.gallery-image{
+    text-align:center;
+}
+
+.gallery-image img{
+    max-width:100%;
+    height:auto;
+}
+
+.feature-text p,
+.project-text p{
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+/* HOMEPAGE FEATURED LINKS */
+
+.featured h2,
+.featured h2 a,
+.featured a{
+    color:#059aa6;
+}
+`
+
+/* HOMEPAGE TEXT SIZE OVERRIDES */
+
+.home-content .intro-column h2 {
+    font-size: 32px;
+}
+
+.home-content .intro-column li {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.home-content .video-caption {
+    font-size: 19px;
+}
+
+.home-content .featured .card h2 {
+    font-size: 28px;
+}
+
+.home-content .featured .card {
+    font-size: 19px;
+}
+
+/* HOMEPAGE PORTFOLIO CARD LINKS */
+
+.card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-link h2 {
+    color: #059aa6;
+}
+
+.card-link p {
+    color: #222;
+    font-size: 19px;
+    margin-top: 6px;
+}
+
+.card-link:hover {
+    opacity: 0.8;
+}
+
+/* ARTWORK PAGE */
+
+.artwork-section{
+    max-width:1200px;
+    margin:20px auto 40px;
+    padding:20px 40px 40px;
+}
+
+.artwork-intro{
+    max-width:900px;
+    margin:0 auto 35px;
+    padding:35px 40px;
+    background:#e2e6e5;
+    text-align:center;
+}
+
+.artwork-intro h1{
+    color:#059aa6;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.artwork-intro p{
+    max-width:850px;
+    margin:0 auto;
+    font-size:19px;
+    line-height:1.6;
+}
+
+.artwork-grid{
+    max-width:900px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+}
+
+.artwork-grid img{
+    width:100%;
+    height:auto;
+    display:block;
+}
